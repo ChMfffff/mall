@@ -20,6 +20,7 @@
     methods: {
       itemClick(index) {
         this.currentIndex = index
+        this.$emit('tabClick',index)
       }
     },
     props: {
@@ -33,7 +34,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .tab-control {
     display: flex;
     text-align: center;
